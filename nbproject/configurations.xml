@@ -5,12 +5,16 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>system.h</itemPath>
+<<<<<<< HEAD
       <itemPath>motor.h</itemPath>
       <itemPath>com.h</itemPath>
       <itemPath>user.h</itemPath>
       <itemPath>decoder.h</itemPath>
       <itemPath>adc.h</itemPath>
       <itemPath>controller.h</itemPath>
+=======
+      <itemPath>user.h</itemPath>
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -24,12 +28,16 @@
       <itemPath>main.c</itemPath>
       <itemPath>system.c</itemPath>
       <itemPath>traps.c</itemPath>
+<<<<<<< HEAD
       <itemPath>motor.c</itemPath>
       <itemPath>com.c</itemPath>
       <itemPath>user.c</itemPath>
       <itemPath>decoder.c</itemPath>
       <itemPath>adc.c</itemPath>
       <itemPath>controller.c</itemPath>
+=======
+      <itemPath>user.c</itemPath>
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -615,7 +623,11 @@
         <property key="REAL TIME CLOCK AND CALENDAR" value="true"/>
         <property key="SPI 1" value="true"/>
         <property key="SPI 2" value="true"/>
+<<<<<<< HEAD
         <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
+=======
+        <property key="SecureSegment.SegmentProgramming" value="SegmentProgrammingAll"/>
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
         <property key="TIMER1" value="true"/>
         <property key="TIMER2" value="true"/>
         <property key="TIMER3" value="true"/>
@@ -627,7 +639,10 @@
         <property key="UART 1" value="true"/>
         <property key="UART 2" value="true"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
+<<<<<<< HEAD
         <property key="firmware.download.all" value="false"/>
+=======
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
         <property key="hwtoolclock.frcindebug" value="true"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="false"/>
@@ -649,7 +664,11 @@
         <property key="programoptions.testmodeentrymethod" value="VPPFirst"/>
         <property key="programoptions.usehighvoltageonmclr" value="false"/>
         <property key="programoptions.uselvpprogramming" value="false"/>
+<<<<<<< HEAD
         <property key="voltagevalue" value="3.375"/>
+=======
+        <property key="voltagevalue" value="3.25"/>
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
       </ICD3PlatformTool>
     </conf>
     <conf name="C30_dsPIC33FJ16GS504" type="2">

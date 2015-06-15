@@ -21,3 +21,39 @@
 /* User Functions                                                             */
 /******************************************************************************/
 
+<<<<<<< HEAD
+=======
+/* <Initialize variables in user.h and insert code for user algorithms.> */
+
+void InitApp(void)
+{
+    TRISA = 0x0000;
+    TRISB = 0x0000;
+    TRISC = 0x01FF;
+
+    //BSET    PORTA, #1
+
+    CNEN1 = 0x00;
+    CNEN2 = 0x00;
+    AD1CON1 = 0x00;
+
+    AD1PCFGL = 0x01FF;
+
+    //AD1PCFGL = 0x00FF;
+    //ADON = 0;
+
+    CMCON = 0x00;
+
+    PORTA = 0xFFFF;
+
+
+    //PORTBbits.RB0 = 1;
+    //PORTBbits.RB1 = 1;
+
+    /* TODO Initialize User Ports/Peripherals/Project here */
+
+    /* Setup analog functionality and port direction */
+
+    /* Initialize peripherals */
+}
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296

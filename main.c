@@ -14,6 +14,7 @@
 #endif
 
 
+<<<<<<< HEAD
 #include <stdint.h>         /* Includes uint16_t definition                   */
 #include <stdbool.h>        /* Includes true/false definition                 */
 #include <stdio.h>
@@ -30,10 +31,20 @@
 #include "controller.h"
 
 #define SMC 1
+=======
+#include <stdint.h>        /* Includes uint16_t definition                    */
+#include <stdbool.h>       /* Includes true/false definition  */
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "system.h"        /* System funct/params, like osc/peripheral config */
+#include "user.h"          /* User funct/params, such as InitApp              */
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
 
 /******************************************************************************/
 /* Global Variable Declaration                                                */
 /******************************************************************************/
+<<<<<<< HEAD
 
 int g_spi_data = 50;
 int des_pos = MAX_COUNTS/4;
@@ -131,6 +142,26 @@ void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void){
 
 }
 
+=======
+int spi_data = 50;
+/* i.e. uint16_t <variable_name>; */
+
+void __attribute__((interrupt, no_auto_psv)) _SPI1Interrupt(void){
+       
+    
+    IFS0bits.SPI1IF = 0; // Clear the Interrupt flag
+    IEC0bits.SPI1IE = 0; // Disable the interrupt
+
+    
+    spi_data = SPI1_REC();
+    // Interrupt Controller Settings
+    IFS0bits.SPI1IF = 0; // Clear the Interrupt flag
+    IEC0bits.SPI1IE = 1; // Enable the interrupt
+}
+
+
+
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
 
 /******************************************************************************/
 /* Main Program                                                               */
@@ -138,6 +169,7 @@ void __attribute__((interrupt, no_auto_psv)) _T1Interrupt(void){
 
 int16_t main(void)
 {
+<<<<<<< HEAD
 
     /* Configure the oscillator for the device */
     configure_oscillator();
@@ -434,5 +466,57 @@ int16_t main(void)
 //            tmp = receive_spi_command();
 //        }
 
+=======
+    //InitApp();
+
+    /* Configure the oscillator for the device */
+    ConfigureOscillator();
+
+    /* Initialize IO ports and peripherals */
+    InitApp();
+
+    motor0_init();
+    SPI1SLAVE_init();
+    //printf("%d\n", PORTA _SFR_);
+    /* TODO <INSERT USER APPLICATION CODE HERE> */
+    long int duty = 0;
+    //AD1PCFGL = 0x00FF;
+    
+//    TRISA = 0x0000;
+//    TRISB = 0x0000;
+
+//    spi_data = SPI1_REC();
+
+    while(1)
+    {
+        duty++;
+        //InitApp();
+//        TRISB = 0x0000;
+//        LATB = 0x0000;
+//
+////        TRISA = 0x00;
+//        PORTA = 0xFF;
+//
+////        TRISB = 0x0000;
+//        LATB = 0xFFFF;
+//
+////        TRISA = 0x00;
+//        LATA = 0x00;
+//        if((SPI1STAT & _SPIRBF) == 1)
+//            spi_data = SPI1_REC();
+        //if((duty%50000) == 0){
+        //   PWM1CON1 = 0x0770;
+
+        //SPI1_SEND(duty%128);
+
+        if(PORTCbits.RC6 == 1)
+            spi_data = SPI1_REC();
+
+            if((duty%100000) == 0){
+                motor1(spi_data%255);
+                //PWM1CON1 = 0x0707;
+            }
+        //}
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
     }
 }

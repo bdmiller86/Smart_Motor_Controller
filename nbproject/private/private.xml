@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+<<<<<<< HEAD
+=======
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/Makefile</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/main.c</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/system.c</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/user.c</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/system.h</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/user.h</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/interrupts.c</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/getting_started.txt</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/traps.c</file>
+        <file>file:/C:/Users/Josh/MPLABXProjects/dspic33_c_template_1.X/configuration_bits.c</file>
+    </open-files>
+>>>>>>> 8bb88a5dab0fc86bee57fd49bb9c95909b443296
 </project-private>
