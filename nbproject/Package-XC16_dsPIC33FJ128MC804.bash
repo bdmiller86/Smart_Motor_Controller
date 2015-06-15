@@ -10,9 +10,9 @@ CND_CONF=XC16_dsPIC33FJ128MC804
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/dspic33_c_template_1.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=dspic33_c_template_1.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=dspic33ctemplate1.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Smart_Motor_Controller.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=Smart_Motor_Controller.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=smartmotorcontroller/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/dspic33ctemplate1.x/bin
+makeDirectory ${TMPDIR}/smartmotorcontroller/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/dspic33ctemplate1.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/smartmotorcontroller.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/dspic33ctemplate1.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/smartmotorcontroller.tar *
 checkReturnCode
 
 # Cleanup

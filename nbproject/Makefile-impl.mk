@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=dspic33_c_template_1.X
+PROJECTNAME=Smart_Motor_Controller
 
 # Active Configuration
 DEFAULTCONF=XC16_dsPIC33FJ128MC804
